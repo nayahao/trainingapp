@@ -28,7 +28,6 @@ submitButton.addEventListener("click", function(event) {
     const passwordValue = password.value;
 
     // Create a new user with email and password
-    // Create a new user with email and password
     createUserWithEmailAndPassword(auth, emailValue, passwordValue)
         .then((userCredential) => {
             const user = userCredential.user;
