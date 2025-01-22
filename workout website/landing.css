@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Slackey&display=swap');
 
 
-:root {
+/*:root {
     --accent-color: #373d3b;
     --base-color: #8C9A9E;
     --text-color:  #E5F8FF;
+    --input-color: #a5c8dc;
+}*/
+
+:root {
+    --accent-color: #373d3b;
+    --base-color: #8C9A9E;
+    --text-color:  #c3dee2;
     --input-color: #a5c8dc;
 }
 

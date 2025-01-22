@@ -17,6 +17,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html{
@@ -169,8 +170,9 @@ a{
     padding: 1rem 2rem;
 }
 .logo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
+    color: var(--text-color);
 }
 .nav-links {
     display: flex;
@@ -181,7 +183,7 @@ a{
     color: var(--text-color);
     text-decoration: none;
     margin-left: 1.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     transition: 200ms ease;
 }
 
