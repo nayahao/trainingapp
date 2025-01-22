@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Slackey&display=swap');
+
+
+:root {
+    --accent-color: #373d3b;
+    --base-color: #8C9A9E;
+    --text-color:  #E5F8FF;
+    --input-color: #a5c8dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and margin don't cause overflow */
+}
+
+body {
+    font-family: Rubik Mono One, sans-serif;
+    overflow-x: hidden; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+html {
+    height: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    color: var(--text-color);
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    transition: 200ms ease;
+}
+
+.nav-links a:hover {
+    color: var(--input-color);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+    width: 100vw;
+}
+
+.main-section h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-section p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+    word-wrap: break-word; /* Prevent text from cutting off */
+}
+
+/* slides */
+.slides {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-size: cover;
+    background-position: center; 
+    overflow: hidden; 
+}
+
+.slides-content {
+    text-align: center;
+}
+
+.slide{
+    display: none; /*hiding it*/
+}
+
+
+.slide img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block; /* Show the active slide */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 40px; 
+    height: 40px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.right-arrow {
+    right: 0; 
+}
+svg {
+    width: 100%;   
+    height: 180%;  
+    fill: var(--text-color); 
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
